@@ -20,13 +20,13 @@ main {
 
 footer {
   position: fixed;
-  bottom: 2%;
+  bottom: 1%;
   width: 100%;
   text-align: right;
 }
 
 footer p {
-  padding-right: 5%;
+  padding-right: 2%;
 }
 
 ul {
@@ -37,6 +37,15 @@ ul {
 
 li {
   padding: 5px;
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
 }
 
 .selected, #content h1 span {
