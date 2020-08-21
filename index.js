@@ -10,7 +10,11 @@
    */
   window.addEventListener("load", init);
 
-  function init() {}
+  function init() {
+    qsa("a").forEach(link => {
+      link.classList.add("underline");
+    });
+  }
 
   /** ------------------------------ Helper Functions  ------------------------------ */
 
@@ -21,6 +25,24 @@
    */
   function id(idName) {
     return document.getElementById(idName);
+  }
+
+  /**
+   * Returns the first element that matches the given CSS selector.
+   * @param {string} selector - CSS query selector.
+   * @returns {object} The first DOM object matching the query.
+   */
+  function qs(selector) {
+    return document.querySelector(selector);
+  }
+
+  /**
+   * Returns the array of elements that match the given CSS selector.
+   * @param {string} selector - CSS query selector
+   * @returns {object[]} array of DOM objects matching the query.
+   */
+  function qsa(selector) {
+    return document.querySelectorAll(selector);
   }
 
   /**
