@@ -115,6 +115,7 @@ h1, h2, h3 {
 
 #projects-container {
   margin: 0 auto;
+  margin-bottom: 10vh;
   width: 80vw;
   display: flex;
   justify-content: center;
@@ -124,6 +125,7 @@ h1, h2, h3 {
 .project-card {
   margin: 5vw;
   margin-bottom: 0;
+  margin-right: 1vw;
   width: 30vw;
   box-shadow: 2px -12px 40px rgba(0, 0, 0, 0.03);
 }
@@ -140,10 +142,13 @@ h1, h2, h3 {
 
 .name-class {
   width: 55%;
+  margin: 0 auto;
 }
 
-.name-class {
+.name-class p {
+  width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .title {
