@@ -8,6 +8,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   color: #707070;
   background-color: #f7f5f5;
+  overflow-x: hidden;
 }
 
 header {
@@ -40,20 +41,6 @@ footer p {
   padding-right: 2%;
 }
 
-ul {
-  font-size: 20px;
-  list-style: none;
-  text-align: right;
-}
-
-li {
-  padding: 5px;
-}
-
-li:hover {
-  cursor: pointer;
-}
-
 a {
   text-decoration: none;
   color: #b2b2b2;
@@ -70,7 +57,7 @@ strong, .selected {
 
 #home {
   margin: 5% auto;
-  width: 640px;
+  width: 50vw;
   text-align: center;
 }
 
@@ -89,7 +76,7 @@ h1, h2, h3 {
   padding-top: 5%;
 }
 
-#home-br {
+.break {
   margin: 2% auto;
   width: 80vw;
   display: flex;
@@ -99,12 +86,12 @@ h1, h2, h3 {
   flex-wrap: wrap;
 }
 
-#home-br > .hr {
+.break > .hr {
   width: 25vw;
   margin: 0 auto;
 }
 
-#home-br h3 {
+.break h3 {
   letter-spacing: 3px;
   padding-left: 10px;
   padding-right: 10px;
@@ -134,24 +121,35 @@ h1, h2, h3 {
   padding: 3em;
   opacity: 100%;
   text-align: center;
+  cursor: pointer;
+}
+
+.project:hover {
+  box-shadow: 2px -12px 40px rgba(0, 0, 0, 0.05);
+}
+
+.project, .project:hover {
+  transition-property: box-shadow;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
 }
 
 .project .hr {
   margin: 10%;
 }
 
-.name-class {
+.description {
   width: 55%;
   margin: 0 auto;
 }
 
-.name-class p {
+.description p {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-.title {
+.container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -166,13 +164,32 @@ h1, h2, h3 {
   font-variant-caps: all-small-caps;
 }
 
-.title img {
+.container img {
   width: 40%;
   image-rendering: -moz-crisp-edges; /* Firefox */
   image-rendering: -o-crisp-edges; /* Opera */
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+#abt-me {
+  padding: 5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+}
+
+#abt-me img {
+  border-radius: 50%;
+  width: 15%;
+}
+
+#abt-me p {
+  width: 30%;
 }
 
 .underline {
@@ -194,4 +211,18 @@ h1, h2, h3 {
 
 .hidden {
   display: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #707070;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
 }

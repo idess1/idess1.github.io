@@ -8,11 +8,14 @@
   /**
    * Add a function that will be called when the window is loaded.
    */
-  window.addEventListener("load", init);
+  window.addEventListener('load', init);
 
   function init() {
     qsa("a").forEach(link => {
       link.classList.add("underline");
+    });
+    qsa(".project").forEach(project => {
+      project.addEventListener('click', toDetailView);
     });
   }
 
