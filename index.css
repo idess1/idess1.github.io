@@ -29,7 +29,7 @@ main {
 
 footer {
   position: fixed;
-  bottom: 1%;
+  bottom: 0;
   width: 100%;
   text-align: center;
   font-variant-caps: all-small-caps;
@@ -91,15 +91,16 @@ strong, .selected {
 
 #home-br {
   margin: 5% auto;
-  width: 1440px;
+  width: 80vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 #home-br > .hr {
-  width: 480px;
+  width: 25vw;
   margin: 0 auto;
 }
 
@@ -113,9 +114,23 @@ strong, .selected {
 }
 
 #projects-container {
-  width: 80%;
+  margin: 0 auto;
+  width: 80vw;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  margin: 5vw;
+  width: 30vw;
+  height: 30vh;
+  box-shadow: 2px -12px 40px rgba(0, 0, 0, 0.03);
+}
+
+.project {
+  opacity: 100%;
+  text-align: center;
 }
 
 .underline {
