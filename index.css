@@ -124,13 +124,47 @@ strong, .selected {
 .project-card {
   margin: 5vw;
   width: 30vw;
-  height: 30vh;
+  height: 40vh;
   box-shadow: 2px -12px 40px rgba(0, 0, 0, 0.03);
 }
 
 .project {
+  padding: 3em;
   opacity: 100%;
   text-align: center;
+}
+
+.project .hr {
+  margin: 10%;
+}
+
+.name-class {
+  width: 55%;
+  text-align: right;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title h2 {
+  font-weight: 200;
+}
+
+.title p {
+  font-variant-caps: all-small-caps;
+}
+
+.title img {
+  width: 35%;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
 }
 
 .underline {
