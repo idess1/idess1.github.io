@@ -71,10 +71,10 @@ strong, .selected {
 #home {
   margin: 5% auto;
   width: 640px;
-  text-align: right;
+  text-align: center;
 }
 
-#home h1, #home h2 {
+h1, h2, h3 {
   font-weight: 350;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -90,7 +90,7 @@ strong, .selected {
 }
 
 #home-br {
-  margin: 5% auto;
+  margin: 2% auto;
   width: 80vw;
   display: flex;
   flex-direction: row;
@@ -123,8 +123,8 @@ strong, .selected {
 
 .project-card {
   margin: 5vw;
+  margin-bottom: 0;
   width: 30vw;
-  height: 40vh;
   box-shadow: 2px -12px 40px rgba(0, 0, 0, 0.03);
 }
 
@@ -140,7 +140,10 @@ strong, .selected {
 
 .name-class {
   width: 55%;
-  text-align: right;
+}
+
+.name-class {
+  margin: 0 auto;
 }
 
 .title {
@@ -150,16 +153,16 @@ strong, .selected {
   align-items: center;
 }
 
-.title h2 {
+.project h2, .project h3 {
   font-weight: 200;
 }
 
-.title p {
+.project h3 {
   font-variant-caps: all-small-caps;
 }
 
 .title img {
-  width: 35%;
+  width: 40%;
   image-rendering: -moz-crisp-edges; /* Firefox */
   image-rendering: -o-crisp-edges; /* Opera */
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
