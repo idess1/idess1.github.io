@@ -1,11 +1,11 @@
 .project {
-  height: 580px;
+  height: 520px;
   cursor: auto;
 }
 
 .project-card {
-  height: 580px;
-  margin: 5vh 5vw auto 5vw;
+  height: 520px;
+  margin: 5vh 5vw 5vh 5vw;
 }
 
 .project-card table {

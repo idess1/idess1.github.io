@@ -118,18 +118,17 @@ h1, h2, h3 {
 }
 
 .project-card {
-  margin-right: 1vw;
-  box-shadow: -12px -12px 40px rgba(0, 0, 0, 0.03);
-  margin: 5vw;
+  margin: 5vh;
   width: 420px;
-  height: 445px;
-  margin-bottom: 0;
+  height: 320px;
 }
 
 .project {
   padding: 3em;
   text-align: center;
+  box-shadow: -12px -12px 40px rgba(0, 0, 0, 0.03);
   cursor: pointer;
+  height: 320px;
   color: #707070;
 }
 
