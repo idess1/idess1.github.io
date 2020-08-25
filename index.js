@@ -11,12 +11,6 @@
   window.addEventListener('load', init);
 
   function init() {
-    qsa("a").forEach(link => {
-      link.classList.add("underline");
-    });
-    qsa(".project").forEach(project => {
-      project.addEventListener('click', toDetailView);
-    });
   }
 
   /** ------------------------------ Helper Functions  ------------------------------ */

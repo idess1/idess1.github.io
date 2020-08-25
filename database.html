@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Copyright 2020 © Idess Lee -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <script src="index.js"></script>
+    <title>Idess Lee</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="selected">home</a>
+        <a href="about.html">about</a>
+        <a href="/">r&eacute;sum&eacute;</a>
+        <a href="https://www.linkedin.com/in/idess/" target="_blank">linkedin</a>
+        <a href="https://github.com/idess1" target="_blank">github</a>
+      </nav>
+    </header>
+    <main>
+      <section id="projects-container">
+        <section class="project-card">
+          <section class="project">
+            <section class="container">
+              <img src="img/distributed-database.png" alt="Distributed Database Icon">
+              <section class="description">
+                <h2>Distributed Database</h2>
+                <h3>
+                  Pair class project
+                </h3>
+              </section>
+            </section>
+            <div class="hr"></div>
+            <p>A distributed, fault-tolerant, sharded key-value database.</p>
+            <div class="hr"></div>
+            <h3>Java, JUnit, Lombok, Apache Commons Lang, Google Guava</h3>
+          </section>
+        </section>
+        <section id="details-card">
+          <table>
+            <tr>
+              <td>Role</td>
+              <td>Software Engineer + Chief Debugger</td>
+            </tr>
+            <tr>
+              <td>Date</td>
+              <td>March 2020 &mdash; June 2020</td>
+            </tr>
+            <tr>
+              <td>Link</td>
+              <td>Private repo available upon request</td>
+            </tr>
+          </table>
+          <div class="break">
+            <div class="hr"></div>
+            <h3>Goals</h3>
+            <div class="hr"></div>
+          </div>
+          <p>
+            In this project similar to real-life implementations of distributed systems such as
+            Amazon's DynamoDB or Google's Spanner, I aim to build a distributed database that
+            withstands server failures and network complications such as delayed or dropped
+            messages.
+          </p>
+          <div class="break">
+            <div class="hr"></div>
+            <h3>What I Did</h3>
+            <div class="hr"></div>
+          </div>
+          <p>
+            I <strong>built a fault-tolerant distributed database</strong> using various methods
+            such as Primary + Backup and Distributed Concensus. I also <strong>balanced workload
+            among servers via sharding</strong>, increasing performance and preventing server
+            crashes due to high-traffic. In addition, I <strong>implemented dynamic load
+            balancing</strong> when servers join and leave, or when shards are moved.
+          </p>
+          <p>
+            In the Distributed Concensus method, I <strong>implemented the multi-instance Paxos
+            algorithm</strong> in which all servers replicate each command in the exact order as
+            prompted by the leader. This way, I <strong>guarantee high-availability and
+            linearizability</strong>.
+          </p>
+          <p>
+            In addition, I <strong>took out countless obscure bugs</strong> due to various network
+            complications via backtracing, rubber duck debugging, and good ol' print statements.
+          </p>
+          <div class="break">
+            <div class="hr"></div>
+            <h3>What I Learned</h3>
+            <div class="hr"></div>
+          </div>
+          <p>
+            This project <strong>enhanced my passion for problem-solving</strong> given that it is
+            not only difficult, but also extremely obscure to debug. Owning up to the challenge and
+            being able to explain the bugs gave me a great sense of accomplishment and thrill!
+          </p>
+          <p>
+            I also worked on my <strong>pair-programming skills</strong> in this project. In
+            working with a project partner, I was able to work on articulating my train of thought
+            and reinforcing my own understanding of the concepts.
+          </p>
+        </section>
+      </section>
+      <footer>
+        <h3 id="copyright">2020 &copy; Idess Lee</h3>
+      </footer>
+    </main>
+  </body>
+</html>
