@@ -5,12 +5,19 @@
 
 (function() {
 
+  const EMAIL = "idess@cs.uw.edu";
+
   /**
    * Add a function that will be called when the window is loaded.
    */
   window.addEventListener('load', init);
 
   function init() {
+    id('email').addEventListener('click', showEmail);
+  }
+
+  function showEmail() {
+    this.textContent = EMAIL;
   }
 
   /** ------------------------------ Helper Functions  ------------------------------ */

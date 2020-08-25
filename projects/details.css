@@ -1,9 +1,33 @@
 .project {
+  height: 580px;
   cursor: auto;
 }
 
 .project-card {
-  margin: auto 5vw auto 5vw;
+  height: 580px;
+  margin: 5vh 5vw auto 5vw;
+}
+
+.project-card table {
+  margin: 0 auto;
+}
+
+.project-card table td:nth-child(1) {
+  border-bottom: 1px solid #707070;
+  letter-spacing: 1px;
+}
+
+.project-card table td:nth-child(2) {
+  padding-left: 20px;
+}
+
+.project-card table td {
+  font-size: 20px;
+}
+
+.project-card table td {
+  font-weight: 200;
+  font-variant-caps: all-small-caps;
 }
 
 #details-card .break {
@@ -16,26 +40,9 @@
 
 #details-card {
   width: 480px;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   text-align: center;
-}
-
-#details-card table {
-  margin: 0 auto;
-}
-
-#details-card table td:nth-child(1) {
-  border-bottom: 1px solid #707070;
-  letter-spacing: 1px;
-}
-
-#details-card table td:nth-child(2) {
-  padding-left: 20px;
-}
-
-#details-card table td {
-  font-size: 20px;
 }
 
 #details-card .hr {
@@ -46,20 +53,15 @@
   text-align: left;
 }
 
-#details-card table td {
-  font-weight: 200;
-  font-variant-caps: all-small-caps;
-}
-
-#details-card a {
+a {
   color: #b2b2b2;
 }
 
-#details-card a:hover {
+a:hover {
   color: black;
 }
 
-#details-card a, #details-card a:hover {
+a, a:hover {
   transition-property: color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;

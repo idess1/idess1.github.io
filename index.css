@@ -42,17 +42,17 @@ a {
   text-decoration: none;
 }
 
-header a {
+header a, #abt-container a, #email {
   color: #b2b2b2;
 }
 
-header a, header a:hover {
+header a, header a:hover, #abt-container a, #abt-container a:hover, #email {
   transition-property: color;
   transition-duration: .3s;
   transition-timing-function: ease-in-out;
 }
 
-a:hover, strong, .selected {
+a:hover, strong, .selected, #abt-container a:hover {
   color: black;
 }
 
