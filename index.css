@@ -9,6 +9,7 @@ body {
   color: #707070;
   background-color: #f7f5f5;
   overflow-x: hidden;
+  display: flex;
 }
 
 header {
@@ -26,10 +27,10 @@ nav {
 main {
   position: absolute;
   width: 100vw;
+  margin-bottom: 1em;
 }
 
 footer {
-  position: fixed;
   bottom: 1em;
   width: 100%;
   font-variant-caps: all-small-caps;
@@ -118,7 +119,7 @@ h1, h2, h3 {
 }
 
 .project-card {
-  margin: 5vh;
+  margin: 8vh;
   width: 420px;
   height: 320px;
 }
