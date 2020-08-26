@@ -13,6 +13,7 @@ body {
 }
 
 header {
+  z-index: 1;
   width: 100vw;
   height: 80px;
 }
@@ -27,11 +28,11 @@ nav {
 main {
   position: absolute;
   width: 100vw;
-  margin-bottom: 1em;
+  height: 100vh;
 }
 
 footer {
-  bottom: 1em;
+  margin-bottom: 1em;
   width: 100%;
   font-variant-caps: all-small-caps;
   letter-spacing: 3px;
@@ -63,7 +64,7 @@ a:hover, strong, .selected, #abt-container a:hover {
 }
 
 #home {
-  margin: 5% auto;
+  margin: 10% auto;
   width: 50vw;
   text-align: center;
 }
