@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/heart.png">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="details.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
@@ -62,16 +63,33 @@
             <h3>Goals</h3>
             <div class="hr"></div>
           </div>
-          <p>
-            Coming soon!
-          </p>
+          <ul>
+            <li>To design and develop a database application that handles concurrent transactions.</li>
+            <li>To minimize security risks when handling client input.</li>
+          </ul>
           <div class="break">
             <div class="hr"></div>
             <h3>What I Did</h3>
             <div class="hr"></div>
           </div>
           <p>
-            Coming soon!
+            Firstly, I <strong>designed the Flights database</strong> to allow for user creation and
+            login, as well as to keep a persistent log of reservations. Then, using JDBC, I
+            <strong>connected the Java application to the MSSQL database hosted on Azure</strong>.
+            In addition, I ensured all queries are wrapped in
+            <a href="https://docs.oracle.com/javase/7/docs/api/java/sql/PreparedStatement.html" target="_blank">PreparedStatements</a>
+            with parameterized user arguments. This prevents users from breaking the database using
+            SQL commands as input.
+          </p>
+          <p>
+            Secondly, I <strong>scaled up the application by implementing transactions</strong> to
+            allow for multiple users on different terminals to use my application concurrently. I
+            ensured that in the case of a deadlock, I re-try the transaction that was blocked.
+          </p>
+          <p>
+            Lastly, I <strong>wrote additional test scripts to ensure correctness and reliability
+            </strong> of my application. The tests I wrote include both sequential cases (no
+            conflicting transactions) and concurrent casses.
           </p>
           <div class="break">
             <div class="hr"></div>

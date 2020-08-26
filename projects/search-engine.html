@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/heart.png">
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="details.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
@@ -35,7 +36,8 @@
             </section>
             <div class="hr"></div>
             <p>
-              A multi-threaded web-based search engine that processes multi-word queries and static file queries.
+              A multi-threaded web-based search engine that processes multi-word queries and static
+              file queries.
             </p>
             <div class="hr"></div>
             <h3>C, C++, Make, Google Test</h3>
@@ -62,16 +64,47 @@
             <h3>Goals</h3>
             <div class="hr"></div>
           </div>
-          <p>
-            Coming soon!
-          </p>
+          <ul>
+            <li>
+              To build and use generic data structures (doubly-linked list and chaining hash table)
+              that can store any arbitrary data type.
+            </li>
+            <li>
+              To parse text files and directories by using provided OS services (specifically
+              Posix).</li>
+            <li>
+              To add concurrency to the search engine.
+            </li>
+          </ul>
           <div class="break">
             <div class="hr"></div>
             <h3>What I Did</h3>
             <div class="hr"></div>
           </div>
           <p>
-            Coming soon!
+            Firstly, I <strong>built a doubly-linked list and a chaining hash table</strong>. By
+            storing void pointers, these data structures allow for any type of data to be stored. To
+            follow C module conventions, I <strong>provided header guards and full documentation in
+            the .h files</strong> and <strong>hid implementation details in the .c files</strong>.
+          </p>
+          <p>
+            Using those data structures, I built a file system crawler that crawls through a
+            provided directory and folds the contents of each file into an index. The details of
+            this step are difficult to follow, so I will skip them. Essentially, I <strong>correctly
+            used and managed multiple nested data structures</strong> to build the crawler. I also
+            <strong>explicitly allocated and freed memory</strong> during the process.
+          </p>
+          <p>
+            In addition, I <strong>improved the engine's performance</strong> by:
+            <ul>
+              <li>
+                translating in-memory data structures into disk-based, architecture-neutral index
+                file,
+              </li>
+              <li>
+                adding threads to the engine.
+              </li>
+            </ul>
           </p>
           <div class="break">
             <div class="hr"></div>
