@@ -1,171 +1,638 @@
-<!DOCTYPE html>
-<!-- Copyright 2020 © Idess Lee -->
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/heart.png">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <script src="index.js"></script>
-    <title>Idess Lee</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html" class="selected">home</a>
-        <a href="about.html">about</a>
-        <a href="https://drive.google.com/file/d/1U4xmFwVSgkvcPzhJ-2xach51T6WzQ-L_/view?usp=sharing" target="_blank">r&eacute;sum&eacute;</a>
-        <a href="https://www.linkedin.com/in/idess/" target="_blank">linkedin</a>
-        <a href="https://github.com/idess1" target="_blank">github</a>
-      </nav>
-    </header>
-    <main>
-      <section id="home">
-        <h1>
-          Hi there! I'm <strong><em>Idess Lee</em></strong>,<br>
-          aspiring <strong><em>software engineer</em></strong>
-        </h1>
-        <h2>
-          with a commitment to learning<br>
-          and a passion for problem solving.
-        </h2>
-      </section>
-      <div class="break">
-        <div class="hr"></div>
-        <h3>
-          Click project for details
-        </h3>
-        <div class="hr"></div>
-      </div>
-      <section id="projects-container">
-        <section class="project-card">
-          <a href="projects/rakan.html">
-            <section class="project">
-              <section class="container">
-                <img src="img/project-rakan.png" alt="Project Rakan Icon">
-                <section class="description">
-                  <h2>Project Rakan</h2>
-                  <h3>
-                    Group project
-                  </h3>
-                </section>
-              </section>
-              <div class="hr"></div>
-              <p>A SaaS for voters, lawyers, and politicians to analyze gerrymandering.</p>
-              <div class="hr"></div>
-              <h3>C++, CMake, Docker, Google Test</h3>
-            </section>
-          </a>
-        </section>
-        <section class="project-card">
-          <a href="projects/database.html">
-            <section class="project">
-              <section class="container">
-                <img src="img/distributed-database.png" alt="Distributed Database Icon">
-                <section class="description">
-                  <h2>Distributed Database</h2>
-                  <h3>
-                    Pair class project
-                  </h3>
-                </section>
-              </section>
-              <div class="hr"></div>
-              <p>A distributed, fault-tolerant, sharded key-value database.</p>
-              <div class="hr"></div>
-              <h3>Java, JUnit, Lombok, Apache Commons Lang, Google Guava</h3>
-            </section>
-          </a>
-        </section>
-        <section class="project-card">
-          <a href="projects/portfolio.html">
-            <section class="project">
-              <section class="container">
-                <img src="img/portfolio.png" alt="Portfolio Icon">
-                <section class="description">
-                  <h2>Portfolio</h2>
-                  <h3>
-                    Individual personal project
-                  </h3>
-                </section>
-              </section>
-              <div class="hr"></div>
-              <p>
-                You're looking at it! &#9786;<br>
-                A simple website to showcase my portfolio.
-              </p>
-              <div class="hr"></div>
-              <h3>JavaScript, HTML5, CSS3, Adobe XD</h3>
-            </section>
-          </a>
-        </section>
-        <section class="project-card">
-          <a href="projects/flights.html">
-            <section class="project">
-              <section class="container">
-                <img src="img/flight-service.png" alt="Flight Service Icon">
-                <section class="description">
-                  <h2>Flight Service</h2>
-                  <h3>
-                    Individual class project
-                  </h3>
-                </section>
-              </section>
-              <div class="hr"></div>
-              <p>
-                A CLI application that allows a user to search, book, pay, and cancel flights concurrently.
-              </p>
-              <div class="hr"></div>
-              <h3>Java, JUnit, Integration tests, JDBC, MSSQL, Azure</h3>
-            </section>
-          </a>
-        </section>
-        <section class="project-card">
-          <a href="projects/search-engine.html">
-            <section class="project">
-              <section class="container">
-                <img src="img/search-engine.png" alt="Search Engine Icon">
-                <section class="description">
-                  <h2>Search Engine</h2>
-                  <h3>
-                    Individual class project
-                  </h3>
-                </section>
-              </section>
-              <div class="hr"></div>
-              <p>
-                A multi-threaded web-based search engine that processes multi-word queries and static file queries.
-              </p>
-              <div class="hr"></div>
-              <h3>C, C++, Make, Google Test</h3>
-            </section>
-          </a>
-        </section>
-        <section class="project-card">
-          <a href="projects/yipper.html">
-            <section class="project">
-              <section class="container">
-                <img src="img/yipper.png" alt="Yipper Icon">
-                <section class="description">
-                  <h2>Yipper</h2>
-                  <h3>
-                    Individual class project
-                  </h3>
-                </section>
-              </section>
-              <div class="hr"></div>
-              <p>
-                A social-media website that allows users to post and like messages. Similar to Twitter.
-              </p>
-              <div class="hr"></div>
-              <h3>JavaScript, Node.js, SQLite, HTML5, CSS3</h3>
-            </section>
-          </a>
-        </section>
-      </section>
-      <footer>
-        <h3 id="copyright">2020 &copy; Idess Lee</h3>
-      </footer>
-    </main>
-  </body>
-</html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>hello world, i am idess</title><style>
+  /* webkit printing magic: print all background colors */
+  html {
+    -webkit-print-color-adjust: exact;
+  }
+  * {
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  @media only screen {
+    body {
+      margin: 2em auto;
+      max-width: 900px;
+      color: rgb(55, 53, 47);
+    }
+  }
+  
+  body {
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  
+  a,
+  a.visited {
+    color: inherit;
+    text-decoration: underline;
+  }
+  
+  .pdf-relative-link-path {
+    font-size: 80%;
+    color: #444;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+  }
+  
+  h1 {
+    font-size: 1.875rem;
+    margin-top: 1.875rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+  }
+  
+  .source {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 1.5em;
+    word-break: break-all;
+  }
+  
+  .callout {
+    border-radius: 3px;
+    padding: 1rem;
+  }
+  
+  figure {
+    margin: 1.25em 0;
+    page-break-inside: avoid;
+  }
+  
+  figcaption {
+    opacity: 0.5;
+    font-size: 85%;
+    margin-top: 0.5em;
+  }
+  
+  mark {
+    background-color: transparent;
+  }
+  
+  .indented {
+    padding-left: 1.5em;
+  }
+  
+  hr {
+    background: transparent;
+    display: block;
+    width: 100%;
+    height: 1px;
+    visibility: visible;
+    border: none;
+    border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  @media only print {
+    img {
+      max-height: 100vh;
+      object-fit: contain;
+    }
+  }
+  
+  @page {
+    margin: 1in;
+  }
+  
+  .collection-content {
+    font-size: 0.875rem;
+  }
+  
+  .column-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .column {
+    padding: 0 1em;
+  }
+  
+  .column:first-child {
+    padding-left: 0;
+  }
+  
+  .column:last-child {
+    padding-right: 0;
+  }
+  
+  .table_of_contents-item {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.3;
+    padding: 0.125rem;
+  }
+  
+  .table_of_contents-indent-1 {
+    margin-left: 1.5rem;
+  }
+  
+  .table_of_contents-indent-2 {
+    margin-left: 3rem;
+  }
+  
+  .table_of_contents-indent-3 {
+    margin-left: 4.5rem;
+  }
+  
+  .table_of_contents-link {
+    text-decoration: none;
+    opacity: 0.7;
+    border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid rgba(55, 53, 47, 0.09);
+    border-collapse: collapse;
+  }
+  
+  table {
+    border-left: none;
+    border-right: none;
+  }
+  
+  th,
+  td {
+    font-weight: normal;
+    padding: 0.25em 0.5em;
+    line-height: 1.5;
+    min-height: 1.5em;
+    text-align: left;
+  }
+  
+  th {
+    color: rgba(55, 53, 47, 0.6);
+  }
+  
+  ol,
+  ul {
+    margin: 0;
+    margin-block-start: 0.6em;
+    margin-block-end: 0.6em;
+  }
+  
+  li > ol:first-child,
+  li > ul:first-child {
+    margin-block-start: 0.6em;
+  }
+  
+  ul > li {
+    list-style: disc;
+  }
+  
+  ul.to-do-list {
+    text-indent: -1.7em;
+  }
+  
+  ul.to-do-list > li {
+    list-style: none;
+  }
+  
+  .to-do-children-checked {
+    text-decoration: line-through;
+    opacity: 0.375;
+  }
+  
+  ul.toggle > li {
+    list-style: none;
+  }
+  
+  ul {
+    padding-inline-start: 1.7em;
+  }
+  
+  ul > li {
+    padding-left: 0.1em;
+  }
+  
+  ol {
+    padding-inline-start: 1.6em;
+  }
+  
+  ol > li {
+    padding-left: 0.2em;
+  }
+  
+  .mono ol {
+    padding-inline-start: 2em;
+  }
+  
+  .mono ol > li {
+    text-indent: -0.4em;
+  }
+  
+  .toggle {
+    padding-inline-start: 0em;
+    list-style-type: none;
+  }
+  
+  /* Indent toggle children */
+  .toggle > li > details {
+    padding-left: 1.7em;
+  }
+  
+  .toggle > li > details > summary {
+    margin-left: -1.1em;
+  }
+  
+  .selected-value {
+    display: inline-block;
+    padding: 0 0.5em;
+    background: rgba(206, 205, 202, 0.5);
+    border-radius: 3px;
+    margin-right: 0.5em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    white-space: nowrap;
+  }
+  
+  .collection-title {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  
+  time {
+    opacity: 0.5;
+  }
+  
+  .icon {
+    display: inline-block;
+    max-width: 1.2em;
+    max-height: 1.2em;
+    text-decoration: none;
+    vertical-align: text-bottom;
+    margin-right: 0.5em;
+  }
+  
+  img.icon {
+    border-radius: 3px;
+  }
+  
+  .user-icon {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100%;
+    margin-right: 0.5rem;
+  }
+  
+  .user-icon-inner {
+    font-size: 0.8em;
+  }
+  
+  .text-icon {
+    border: 1px solid #000;
+    text-align: center;
+  }
+  
+  .page-cover-image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 30vh;
+  }
+  
+  .page-header-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .page-header-icon-with-cover {
+    margin-top: -0.72em;
+    margin-left: 0.07em;
+  }
+  
+  .page-header-icon img {
+    border-radius: 3px;
+  }
+  
+  .link-to-page {
+    margin: 1em 0;
+    padding: 0;
+    border: none;
+    font-weight: 500;
+  }
+  
+  p > .user {
+    opacity: 0.5;
+  }
+  
+  td > .user,
+  td > time {
+    white-space: nowrap;
+  }
+  
+  input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 0.6em;
+    vertical-align: middle;
+  }
+  
+  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .image {
+    border: none;
+    margin: 1.5em 0;
+    padding: 0;
+    border-radius: 0;
+    text-align: center;
+  }
+  
+  .code,
+  code {
+    background: rgba(135, 131, 120, 0.15);
+    border-radius: 3px;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 85%;
+    tab-size: 2;
+  }
+  
+  code {
+    color: #eb5757;
+  }
+  
+  .code {
+    padding: 1.5em 1em;
+  }
+  
+  .code-wrap {
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  
+  .code > code {
+    background: none;
+    padding: 0;
+    font-size: 100%;
+    color: inherit;
+  }
+  
+  blockquote {
+    font-size: 1.25em;
+    margin: 1em 0;
+    padding-left: 1em;
+    border-left: 3px solid rgb(55, 53, 47);
+  }
+  
+  .bookmark {
+    text-decoration: none;
+    max-height: 8em;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+  }
+  
+  .bookmark-title {
+    font-size: 0.85em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 1.75em;
+    white-space: nowrap;
+  }
+  
+  .bookmark-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bookmark-info {
+    flex: 4 1 180px;
+    padding: 12px 14px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .bookmark-image {
+    width: 33%;
+    flex: 1 1 180px;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    border-radius: 1px;
+  }
+  
+  .bookmark-description {
+    color: rgba(55, 53, 47, 0.6);
+    font-size: 0.75em;
+    overflow: hidden;
+    max-height: 4.5em;
+    word-break: break-word;
+  }
+  
+  .bookmark-href {
+    font-size: 0.75em;
+    margin-top: 0.25em;
+  }
+  
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+  .code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+  .serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+  .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+  .pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+  
+  .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+  
+  .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+  
+  .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+  
+  .highlight-default {
+  }
+  .highlight-gray {
+    color: rgb(155,154,151);
+  }
+  .highlight-brown {
+    color: rgb(100,71,58);
+  }
+  .highlight-orange {
+    color: rgb(217,115,13);
+  }
+  .highlight-yellow {
+    color: rgb(223,171,1);
+  }
+  .highlight-teal {
+    color: rgb(15,123,108);
+  }
+  .highlight-blue {
+    color: rgb(11,110,153);
+  }
+  .highlight-purple {
+    color: rgb(105,64,165);
+  }
+  .highlight-pink {
+    color: rgb(173,26,114);
+  }
+  .highlight-red {
+    color: rgb(224,62,62);
+  }
+  .highlight-gray_background {
+    background: rgb(235,236,237);
+  }
+  .highlight-brown_background {
+    background: rgb(233,229,227);
+  }
+  .highlight-orange_background {
+    background: rgb(250,235,221);
+  }
+  .highlight-yellow_background {
+    background: rgb(251,243,219);
+  }
+  .highlight-teal_background {
+    background: rgb(221,237,234);
+  }
+  .highlight-blue_background {
+    background: rgb(221,235,241);
+  }
+  .highlight-purple_background {
+    background: rgb(234,228,242);
+  }
+  .highlight-pink_background {
+    background: rgb(244,223,235);
+  }
+  .highlight-red_background {
+    background: rgb(251,228,228);
+  }
+  .block-color-default {
+    color: inherit;
+    fill: inherit;
+  }
+  .block-color-gray {
+    color: rgba(55, 53, 47, 0.6);
+    fill: rgba(55, 53, 47, 0.6);
+  }
+  .block-color-brown {
+    color: rgb(100,71,58);
+    fill: rgb(100,71,58);
+  }
+  .block-color-orange {
+    color: rgb(217,115,13);
+    fill: rgb(217,115,13);
+  }
+  .block-color-yellow {
+    color: rgb(223,171,1);
+    fill: rgb(223,171,1);
+  }
+  .block-color-teal {
+    color: rgb(15,123,108);
+    fill: rgb(15,123,108);
+  }
+  .block-color-blue {
+    color: rgb(11,110,153);
+    fill: rgb(11,110,153);
+  }
+  .block-color-purple {
+    color: rgb(105,64,165);
+    fill: rgb(105,64,165);
+  }
+  .block-color-pink {
+    color: rgb(173,26,114);
+    fill: rgb(173,26,114);
+  }
+  .block-color-red {
+    color: rgb(224,62,62);
+    fill: rgb(224,62,62);
+  }
+  .block-color-gray_background {
+    background: rgb(235,236,237);
+  }
+  .block-color-brown_background {
+    background: rgb(233,229,227);
+  }
+  .block-color-orange_background {
+    background: rgb(250,235,221);
+  }
+  .block-color-yellow_background {
+    background: rgb(251,243,219);
+  }
+  .block-color-teal_background {
+    background: rgb(221,237,234);
+  }
+  .block-color-blue_background {
+    background: rgb(221,235,241);
+  }
+  .block-color-purple_background {
+    background: rgb(234,228,242);
+  }
+  .block-color-pink_background {
+    background: rgb(244,223,235);
+  }
+  .block-color-red_background {
+    background: rgb(251,228,228);
+  }
+  .select-value-color-default { background-color: rgba(206,205,202,0.5); }
+  .select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+  .select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+  .select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+  .select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+  .select-value-color-green { background-color: rgba(0,135,107,0.2); }
+  .select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+  .select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+  .select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+  .select-value-color-red { background-color: rgba(255,0,26,0.2); }
+  
+  .checkbox {
+    display: inline-flex;
+    vertical-align: text-bottom;
+    width: 16;
+    height: 16;
+    background-size: 16px;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+  
+  .checkbox-on {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+  }
+  
+  .checkbox-off {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+  }
+    
+  </style></head><body><article id="9fa2ef87-1db5-42fe-94e3-7359ec1df4ce" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="img/icon.svg"/></div><h1 class="page-title">hello world, i am idess</h1></header><div class="page-body"><blockquote id="4f8e759f-7f4c-4c6b-b173-505d1be832f9" class="">an aspiring software engineer with a background in cloud and software engineering 🚕</blockquote><p id="bc428cfa-a542-403f-9250-b6163d3f4cc9" class="">
+  </p><h2 id="e32e6292-c20c-4c71-aed6-dd7f085e3d2f" class="">education</h2><hr id="a6b586bf-f683-460c-9dd9-b0b772909ed4"/><div id="a662aae9-fa86-4f9d-9ea4-f24992d029ef" class="column-list"><div id="d8bc1b26-e2c1-4257-a137-ef4f98a354b6" style="width:18.75%" class="column"><p id="4f80488a-32b9-4ece-aec2-d4324168a47c" class="">expected 2021</p><p id="befae229-ac5d-4482-85d8-392398579439" class="">
+  </p></div><div id="54812d54-1c06-4796-8684-bc67a77fe345" style="width:81.25%" class="column"><p id="64696ed5-f102-419a-a765-892af4ba8de5" class="">👾 <strong>university of washington</strong>, seattle, wa</p><p id="54549a9c-d34c-4ab6-ad67-6dbd458150b2" class="">bachelor of science, computer science</p><ul id="a7d10d7e-4433-4766-9637-ed8e2e877df0" class="bulleted-list"><li>cummulative gpa: 3.9 out of 4.0</li></ul><ul id="0928d7df-b0ae-4b10-b943-5937c0766d7d" class="bulleted-list"><li>annual dean&#x27;s list recipient (2018, 2019)</li></ul><ul id="a48cb6e7-ca9f-4a5b-a98c-5a7d5e0d5ded" class="bulleted-list"><li>global initatives study abroad scholarship recipient</li></ul><p id="101e5902-0194-4f6f-a379-d7ff16006424" class="">
+  </p></div></div><h2 id="c3f0938d-fb3a-44b7-b7cd-72f3e1ee440c" class="">experience</h2><hr id="d8133efe-223d-412d-8bdd-87140b8eeb72"/><div id="8c880931-3500-416b-a578-9c2615af4338" class="column-list"><div id="bb6d96bf-cf8a-4a9f-80d0-e8ffc77552ce" style="width:18.75%" class="column"><p id="4c534022-9746-4a4b-a6a8-a0208af7842c" class="">october 2020 → present</p><p id="dd570915-4851-4a76-8d48-c01df8c38d31" class="">
+  </p></div><div id="07db3ced-7935-48bb-b321-3b1ca1d953a1" style="width:81.25%" class="column"><p id="2773f389-23db-46a1-9cac-c6f46d28b150" class="">☁️ <strong>cloud engineer intern</strong> @ narrative science, chicago, il [remote]</p><p id="79ee7e64-0d63-435d-8929-f25182ead181" class="">interned on the cloud engineering team at an artificial intelligence startup focused on aws, ci/cd, and infrastructure as code</p><ul id="1bd84dbe-278d-4004-9b4d-c5c168079c0d" class="bulleted-list"><li>improved ci/cd by migrating expensive pipelines from <mark class="highlight-yellow_background">circleci</mark> to aws <mark class="highlight-yellow_background">lambda</mark>, <mark class="highlight-yellow_background">cloudformation</mark>, and <mark class="highlight-yellow_background">step functions</mark></li></ul><ul id="80d62f4b-9d5d-4138-938f-633eaaa323b9" class="bulleted-list"><li>upgraded docker images and deployed them to aws <mark class="highlight-yellow_background">ecr</mark></li></ul><ul id="18832abb-2b21-4c5f-ac21-10ffb43c45d0" class="bulleted-list"><li>migrated in-line <mark class="highlight-yellow_background">bash</mark> commands in yaml files to standalone <mark class="highlight-yellow_background">python</mark> scripts to improve scalability and code readability</li></ul><ul id="222646ed-28fc-40a2-bcc8-51e79bd38173" class="bulleted-list"><li>upgraded and maintained <mark class="highlight-yellow_background">pants</mark> (a python build system) from 1.2 → 2.0</li></ul><ul id="03fe1595-d1fa-4bfa-b9d6-42c142c1e940" class="bulleted-list"><li>contributed to design/planning on a team of 4 in an <mark class="highlight-yellow_background">agile</mark> setting</li></ul></div></div><div id="bbb0fbea-e71f-4e0f-95e6-b4a29696e59c" class="column-list"><div id="230ab041-d126-4702-8155-fbfc9cc4c0ca" style="width:18.75%" class="column"><p id="83cf774b-d405-46d1-a899-16de6f9a2684" class="">september 2018 → june 2019</p><p id="412e65bc-3ab0-4abd-913d-4f92a88b784d" class="">
+  </p></div><div id="54624e66-5bc9-4f17-98b4-338e5c6f5f23" style="width:81.25%" class="column"><p id="96734db3-2c3c-45bc-ba14-13056f4556f8" class="">📓 <strong>undergraduate teaching assistant</strong> @ university of washington, bothell, wa</p><p id="93f984e4-8496-4d4c-922b-029645baa63d" class="">assisted professor erin hill in teaching physics 121 (mechanics) and physics 122 (electromagnetism)</p><ul id="b2e69048-00e4-41c9-aae4-0e95d73fa372" class="bulleted-list"><li>assisted in teaching logic-based <mark class="highlight-yellow_background">problem solving</mark> to 300+ undergraduates</li></ul><ul id="46123160-2af8-466c-a2bb-0ef530e6cec5" class="bulleted-list"><li>received exceptional feedback in creating a <a href="http://physicstable.weebly.com/">website</a> to demonstrate electromagnetism concepts</li></ul><p id="7d10b9aa-2265-48b8-9dd0-8bf1fcd37637" class="">
+  </p></div></div><h2 id="af45f91e-0ff1-4325-8e6d-14dbc91d7f5c" class="">projects</h2><hr id="e06acb1a-7a6f-4fb7-a310-4039e3dc8215"/><p id="fa9c7411-ff55-4ff7-a9fb-d1508a911974" class="">👣 <strong>project rakan </strong>— a web application to analyze gerrymandering [<a href="https://github.com/project-rakan">github</a>]</p><ul id="618d8641-cf12-4127-9939-cf0a0f1d0695" class="bulleted-list"><li>led team in designing and developing a <mark class="highlight-yellow_background">c/c++</mark> backend engine running <a href="https://www.wikiwand.com/en/Metropolis%E2%80%93Hastings_algorithm">metropolis-hastings algorithm</a> and various graph algorithms</li></ul><ul id="297b1821-3ae2-417e-b5f8-4f83d9f2ad7f" class="bulleted-list"><li>other technologies: google test, cmake, docker</li></ul><p id="9b75e1f4-dd58-497b-a001-5ea0719e6236" class="">
+  </p><p id="f4f10b0c-a606-4be4-8ddf-20bab235b28c" class="">🧩 <strong>distributed database </strong>— a distributed database similar to aws dynamodb or google cloud spanner</p><ul id="da38f772-ee0b-43e5-8040-4ec9d33b0e87" class="bulleted-list"><li>scaled up the sharded key-value database by automatically redistributing shards when servers leave/join</li></ul><ul id="a3585e9a-05e2-4a23-98c0-b4241d75470b" class="bulleted-list"><li>implemented distributed concensus via the <a href="https://www.cs.cornell.edu/courses/cs7412/2011sp/paxos.pdf">multi-instance paxos algorithm</a> and the <a href="https://www.cs.cornell.edu/fbs/publications/primBkp.optimal.pdf">primary-backup protocol</a> in <mark class="highlight-yellow_background">java</mark></li></ul><ul id="334bd5ab-16db-4976-9d68-bd6c0b7ee397" class="bulleted-list"><li>other technologies: junit, make, apache commons lang, google guava</li></ul><p id="69a571ac-306d-4eff-98b0-f9654960ccc8" class="">
+  </p><h2 id="9157fa38-4a6d-4c09-9227-10450fdb729b" class="">skills</h2><hr id="813d693a-c389-47e6-b23e-ac32419641f7"/><p id="e5228df3-8bf2-48df-be7c-ab889e43efc8" class=""><strong>languages</strong>: java, c/c++, python, bash, javascript, sql, html, css</p><p id="0f5f796c-20dc-46e5-b27d-a890d5f3c939" class=""><strong>frameworks</strong>: spark java, ajax, agile, http, rest api</p><p id="c5d362dc-2b1e-439e-8aba-e712879b3f28" class=""><strong>technologies</strong>: git, aws, linux, unix, docker</p><p id="ad072919-3953-43a3-a1a8-29641087c26e" class="">
+  </p><h2 id="d3c7f028-1a1c-4cd0-aabc-ac46c4b15edf" class="">links</h2><hr id="562f6a52-e96f-4904-8325-f1e8a8d87401"/><figure id="8fff82c4-1e07-4c61-9bd2-f11f41c5191c"><a href="https://www.linkedin.com/in/idess/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Idess Lee - Cloud Engineer Intern - Narrative Science | LinkedIn</div><div class="bookmark-description">Hello! My name is Idess (eye-dis) and I&#x27;m a senior undergraduate student at the University of Washington. I am expecting to earn a Bachelor of Science in Computer Science in December 2021. I am most interested in software, systems, and cloud engineering. I work primarily in Java, C/C++, JavaScript, and Python.</div></div><div class="bookmark-href"><img src="https://static-exp1.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" class="icon bookmark-icon"/>https://www.linkedin.com/in/idess/</div></div><img src="https://media-exp1.licdn.com/dms/image/C5603AQFM2x3jUAn7qg/profile-displayphoto-shrink_200_200/0/1601582454377?e=1615420800&amp;v=beta&amp;t=jvJTqZFCaw18b0f3VJTwfDxHLAjWU9FFeZ-HM-ExaO8" class="bookmark-image"/></a></figure><figure id="86a39a8b-8442-4fea-837b-0c49a28ff63c"><a href="https://github.com/idess1" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">idess1 - Overview</div><div class="bookmark-description">Fourth-year Computer Science student at the University of Washington. Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Mon Wed Fri idess1 has no activity yet for this period. You can&#x27;t perform that action at this time. You signed in with another tab or window.</div></div><div class="bookmark-href"><img src="https://github.com/favicon.ico" class="icon bookmark-icon"/>https://github.com/idess1</div></div><img src="https://avatars3.githubusercontent.com/u/44825710?s=400&amp;v=4" class="bookmark-image"/></a></figure><p id="0ee89a2c-ea06-4e6c-a394-43996e48d8d4" class="">
+  </p><h2 id="6512f377-61b1-4b7f-8b97-60aead1627ff" class="">thanks for reading!</h2><hr id="1814406e-f4c9-42ff-8e67-01d15d472802"/><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="d6eb43e2-2e1d-43f9-8d7f-25fc2730fad5"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%">you can reach me at idess@cs.uw.edu or leeidess@gmail.com.</div></figure><p id="511633f8-ae6d-4eb0-886d-9956f985a0cc" class="">
+  </p></div></article></body></html>
